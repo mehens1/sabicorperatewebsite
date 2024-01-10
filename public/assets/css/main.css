@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #00b6a1;
+  color: var(--color-primary-dark);
   text-decoration: none;
 }
 
@@ -989,7 +989,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: var(--color-primary-dark);
 }
 
 .services .service-item:hover h3 {
@@ -1043,7 +1043,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #009d8b;
+  color: var(--color-primary-dark);
   font-size: 26px;
   line-height: 0;
 }
@@ -1286,7 +1286,7 @@ section {
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
-  background: #009d8b;
+  background: var(--color-primary-dark);
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1330,7 +1330,7 @@ section {
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: #009d8b;
+  color: var(--color-primary-dark);
   font-size: 26px;
   line-height: 0;
 }
@@ -1713,7 +1713,7 @@ section {
 
 .contact .info-item {
   width: 100%;
-  background-color: #009282;
+  background-color: var(--color-primary-dark);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;

@@ -16,7 +16,7 @@
         </div>
     </div>
     
-    <div class="icon-boxes position-relative">
+    {{-- <div class="icon-boxes position-relative">
         <div class="container position-relative">
             <div class="row gy-4 mt-5">
                 <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -49,7 +49,7 @@
 
         </div>
       </div>
-    </div>
+    </div> --}}
 
     </div>
 </section>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>@section('title') :: SABI CORPORATE LIMTED</title>
+  <title>@yield('title', "SABI CORPORATE LIMTED")</title>
   <meta content="Sabi Corporate is a leading and trusted provider of corporate registration and compliance services. Established in 2018, our firm has been serving businesses of all sizes, industries, and legal entities with utmost professionalism and expertise. We specialize in offering comprehensive solutions to help businesses navigate the complexities of company registration, maintenance, and compliance. We are one of the most trusted comprehensive company formation agencies in Nigeria. With over 2,000 clients including top local and global brands; and a combined wealth of specialist experience of more than 6 years – Sabi corporate is your one-stop agency for pre-incorporation, incorporation and post-incorporation matters." name="description">
   <meta content="Sabi Corporate, Sabi CAC, CAC, CAC Registration, Company Registration, Company Registration in Nigeria" name="keywords">
 
@@ -37,7 +37,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@sabicorporate.com">info@sabicorporate.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span><a href="tel:+2348107100130">+234 (0) 810 710 0130</a></span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span><a href="tel:+2347040080080">0704 008 0080</a> | <a href="tel:+2348125224488">0812 522 4488</a> | <a href="tel:+2348150542491">+234 (0) 815 054 2491</a></span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -53,18 +53,17 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>SABI<span>CORPORATE</span></h1>
+        <img src="assets/img/white_logo.png" alt="Logo">
+        <!-- <h1>SABI<span>CORPORATE</span></h1> -->
       </a>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -80,7 +79,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li> --}}
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -101,11 +100,12 @@
 
     <div class="container">
       <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
+
+        <div class="col-lg-6 col-md-12 footer-info">
           <a href="/" class="logo d-flex align-items-center">
             <span>SABI CORPORATE</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Sabi Corporate is a leading and trusted provider of corporate registration and compliance services. Established in 2018, our firm has been serving businesses of all sizes, industries, and legal entities with utmost professionalism and expertise. We specialize in offering comprehensive solutions to help businesses navigate the complexities of company registration, maintenance, and compliance. We are one of the most trusted comprehensive company formation agencies in Nigeria. With over 2,000 clients including top local and global brands; and a combined wealth of specialist experience of more than 6 years – Sabi corporate is your one-stop agency for pre-incorporation, incorporation and post-incorporation matters.</p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -125,25 +125,13 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+            No. 33, Atiku Abubakar Way, Joskrel Limited, Jibiro Plaza, Opposite FCMB, Jimeta-Yola, Adamawa State, Nigeria<br><br>
+            <strong>Phone:</strong> <a href="tel:+23407040080080" class="text-light">07040080080</a> | <a href="tel:+23408125224488" class="text-light">08125224488</a> | <a href="tel:+23408150542491" class="text-light">08150542491</a>
+            <br><br>
+            <strong>Email:</strong> info@sabicorporate.com<br>
           </p>
 
         </div>

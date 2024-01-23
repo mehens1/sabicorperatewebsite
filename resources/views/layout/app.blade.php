@@ -81,6 +81,7 @@
             </ul>
           </li> --}}
           <li><a href="#contact">Contact</a></li>
+          <li><a href="/auth/login">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 

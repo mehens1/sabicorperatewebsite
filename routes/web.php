@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,15 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+// Route::get('/login', function () {
+//     return view('login');
+// });
+Route::get('/', [SiteController::class, 'index']);
+Route::get('/blog', [SiteController::class, 'blog']);
 
-Route::get('/login', function() { return redirect('/auth/login'); });
+
+// Route::get('/login', function() { return redirect('/auth/login'); });
 Route::get('/auth/login', [AuthController::class, 'login']);

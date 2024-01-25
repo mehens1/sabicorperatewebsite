@@ -924,7 +924,7 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="/contact" method="post" role="form" class="php-email-form">
+            <form action="{{ route('contactForm') }}" method="post" role="form" class="php-email-form">
               @csrf
 
               @if($errors->any())

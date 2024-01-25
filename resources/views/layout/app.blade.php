@@ -62,7 +62,7 @@
           <li><a href="/#about">About</a></li>
           <li><a href="/#services">Services</a></li>
           <li><a href="/#team">Team</a></li>
-          <li><a href="/blog">Blog</a></li>
+          <li><a href="{{ route('blog') }}">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="active"><a href="https://portal.sabicorporate.com/">Login</a></li>
 
@@ -134,7 +134,7 @@
             <li><a href="#about">About us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#team">Terms of service</a></li>
-            <li><a href="/blog">Blog (News)</a></li>
+            <li><a href="{{ route('blog') }}">Blog (News)</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="https://portal.sabicorporate.com/">Login</a></li>
           </ul>

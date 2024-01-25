@@ -21,6 +21,6 @@ use App\Http\Controllers\SiteController;
 // Route::get('/login', function () {
 //     return view('login');
 // });
-Route::get('/', [SiteController::class, 'index']);
-Route::get('/blog', [SiteController::class, 'blog']);
-Route::post('/contact', [SiteController::class, 'contactForm']);
+Route::get('/', [SiteController::class, 'index'])->name('home');
+Route::get('/blog', [SiteController::class, 'blog'])->name('blog');
+Route::post('/contact', [SiteController::class, 'contactForm'])->name('contactForm');

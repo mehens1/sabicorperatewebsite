@@ -64,7 +64,7 @@
           <li><a href="/#team">Team</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="active"><a href="/auth/login">Login</a></li>
+          <li class="active"><a href="https://portal.sabicorporate.com/">Login</a></li>
 
 
           @if (session()->has('userId'))
@@ -136,7 +136,7 @@
             <li><a href="#team">Terms of service</a></li>
             <li><a href="/blog">Blog (News)</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="/auth/login">Login</a></li>
+            <li><a href="https://portal.sabicorporate.com/">Login</a></li>
           </ul>
         </div>
 

@@ -1771,7 +1771,7 @@ section {
 }
 
 .contact .php-email-form .error-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #df1529;
   text-align: left;
@@ -1784,7 +1784,7 @@ section {
 }
 
 .contact .php-email-form .sent-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #059652;
   text-align: center;
@@ -1820,6 +1820,7 @@ section {
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
+.contact .php-email-form input[type=password],
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
@@ -1844,7 +1845,8 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  /* background: rgba(0, 131, 116, 0.8); */
+  background: rgba(0, 87, 46, 1);
 }
 
 @keyframes animate-loading {

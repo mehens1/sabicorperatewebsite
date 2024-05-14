@@ -53,7 +53,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="/" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="{{ asset('assets/img/white_logo.png') }}" alt="Logo">
+        <img src="{{ asset('assets/img/glow_main_logo.png') }}" alt="Logo" style="width: 10rem; height: 5rem">
         <!-- <h1>SABI<span>CORPORATE</span></h1> -->
       </a>
       <nav id="navbar" class="navbar">
@@ -62,7 +62,7 @@
           <li><a href="/#about">About</a></li>
           <li><a href="/#services">Services</a></li>
           <li><a href="/#team">Team</a></li>
-          <li><a href="{{ route('blog') }}">Blog</a></li>
+          {{-- <li><a href="{{ route('blog') }}">Blog</a></li> --}}
           <li><a href="#contact">Contact</a></li>
           <li class="active"><a href="https://portal.sabicorporate.com/">Login</a></li>
 
@@ -105,7 +105,7 @@
   <!-- End Header -->
 
   @yield('hero')
-  
+
   @yield('main')
 
   <!-- ======= Footer ======= -->
@@ -116,7 +116,8 @@
 
         <div class="col-lg-6 col-md-12 footer-info">
           <a href="/" class="logo d-flex align-items-center">
-            <span>SABI CORPORATE</span>
+            {{-- <span>SABI CORPORATE</span> --}}
+            <img src="{{ asset('assets/img/glow_main_logo.png') }}" alt="Logo" style="width: 10rem; height: 5rem">
           </a>
           <p>Sabi Corporate is a leading and trusted provider of corporate registration and compliance services. Established in 2018, our firm has been serving businesses of all sizes, industries, and legal entities with utmost professionalism and expertise. We specialize in offering comprehensive solutions to help businesses navigate the complexities of company registration, maintenance, and compliance. We are one of the most trusted comprehensive company formation agencies in Nigeria. With over 2,000 clients including top local and global brands; and a combined wealth of specialist experience of more than 6 years – Sabi corporate is your one-stop agency for pre-incorporation, incorporation and post-incorporation matters.</p>
           <div class="social-links d-flex mt-4">
@@ -134,7 +135,7 @@
             <li><a href="#about">About us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#team">Terms of service</a></li>
-            <li><a href="{{ route('blog') }}">Blog (News)</a></li>
+            {{-- <li><a href="{{ route('blog') }}">Blog (News)</a></li> --}}
             <li><a href="#contact">Contact</a></li>
             <li><a href="https://portal.sabicorporate.com/">Login</a></li>
           </ul>
@@ -146,7 +147,7 @@
             No. 33, Atiku Abubakar Way, Joskrel Limited, Jibiro Plaza, Opposite FCMB, Jimeta-Yola, Adamawa State, Nigeria<br><br>
             <strong>Phone:</strong> <a href="tel:+23407040080080" class="text-light">07040080080</a> | <a href="tel:+23408125224488" class="text-light">08125224488</a> | <a href="tel:+23408150542491" class="text-light">08150542491</a>
             <br><br>
-            <strong>Email:</strong> info@sabicorporate.com<br>
+            <strong>Email:</strong> <a href="mailto:info@sabicorporate.com" class="text-white">info@sabicorporate.com</a><br>
           </p>
 
         </div>

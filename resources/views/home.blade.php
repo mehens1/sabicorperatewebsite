@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    
+
     {{-- <div class="icon-boxes position-relative">
         <div class="container position-relative">
             <div class="row gy-4 mt-5">
@@ -59,7 +59,7 @@
     </div>
 </section>
 <!-- End Hero Section -->
-    
+
 @endsection
 
 @section('main')
@@ -71,18 +71,18 @@
                 <h2>About Us</h2>
                 <p>Sabi Corporate is a leading and trusted provider of corporate registration and compliance services. Established in 2018, our firm has been serving businesses of all sizes, industries, and legal entities with utmost professionalism and expertise. </p>
             </div>
-            
+
             <div class="row gy-4">
                 <div class="col-lg-6">
                     <h3>We at SABI CORPORATE</h3>
                     <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
                     <p>We specialize in offering comprehensive solutions to help businesses navigate the complexities of company registration, maintenance, and compliance. We are one of the most trusted comprehensive company formation agencies in Nigeria. With over 2,000 clients including top local and global brands; and a combined wealth of specialist experience of more than 6 years – Sabi corporate is your one-stop agency for pre-incorporation, incorporation and post-incorporation matters.</p>
                 </div>
-          
+
                 <div class="col-lg-6">
                     <div class="content ps-0 ps-lg-5">
                         <p>At Sabi Corporate, we are more than just a company – we are your advocates for success. Our seasoned experts bring together a wealth of knowledge and experience in corporate law, compliance, and technology. We understand the challenges that businesses face when managing legal requirements, maintaining accurate records, and staying compliant with ever-evolving regulations. Our mission is to alleviate these burdens, allowing you to focus on what truly matters – growing your business.</p>
-                        
+
                         <div class="position-relative mt-4">
                             <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
                             <a href="https://youtu.be/HWQXBXvqxWE" class="glightbox play-btn"></a>
@@ -92,7 +92,7 @@
             </div>
         </div>
     </section><!-- End About Us Section -->
-    
+
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
         <div class="container" data-aos="zoom-out">
@@ -110,7 +110,7 @@
             </div>
         </div>
     </section><!-- End Clients Section -->
-    
+
     <!-- ======= Stats Counter Section ======= -->
     <section id="stats-counter" class="stats-counter">
         <div class="container" data-aos="fade-up">
@@ -123,12 +123,12 @@
                         <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter">+</span>
                         <p><strong>+ Happy Clients</strong> consequuntur quae diredo para mesta</p>
                     </div><!-- End Stats Item -->
-            
+
                     <div class="stats-item d-flex align-items-center">
                         <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
                         <p><strong>Projects</strong> adipisci atque cum quia aut</p>
                     </div><!-- End Stats Item -->
-            
+
                     <div class="stats-item d-flex align-items-center">
                         <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
                         <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
@@ -264,7 +264,7 @@
     </section><!-- End Our Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    {{-- <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -390,74 +390,70 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End Testimonials Section --> --}}
 
-    <!-- ======= Our Team Section ======= -->
+    <!-- ======= Advisory Board Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Team</h2>
+          <h2>Advisory Board</h2>
           <p></p>
         </div>
 
         <div class="row gy-4">
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <h4>Walter White</h4>
-              <span>Web Development</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+            @foreach ($advisory_team as $advisory)
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <a href="{{ route('team', ['id' => $advisory['id']]) }}">
+                  <div class="member">
+                      <img src="assets/img/team/advisory-board/{{ $advisory['image'] }}" class="img-fluid" alt="{{ $advisory['full_name'] }}">
+                      <h4>{{ $advisory['full_name'] }}</h4>
+                      <div class="social">
+                        @if ($advisory['twitter'])
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        @endif
+                        @if ($advisory['facebook'])
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                        @endif
+                        @if ($advisory['instagram'])
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        @endif
+                        @if ($advisory['linkedin'])
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        @endif
+                      </div>
+                  </div>
+              </a>
+            </div><!-- End Team Member -->
+            @endforeach
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Marketing</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <h4>William Anderson</h4>
-              <span>Content</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+        </div>
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+      </div>
+    </section><!-- End Advisory Board Section -->
+
+    <!-- ======= Board of Directors Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Board of Directors Board</h2>
+          <p></p>
+        </div>
+
+        <div class="row gy-4">
+
+            @foreach ($directors as $director)
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <img src="assets/img/team/directors/{{ $director['image'] }}" class="img-fluid" alt="{{ $director['full_name'] }}">
+                        <h4>{{ $director['full_name'] }}</h4>
+                    </div>
+                </div><!-- End Team Member -->
+
+            @endforeach
 
         </div>
 
@@ -500,7 +496,7 @@
                 <i class="bi bi-airplane"></i>
               </div>
 
-              <h4><sup>₦</sup>90,000</h4>
+              <h4><sup>₦</sup>70,000</h4>
               {{-- <ul>
                 <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
                 <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
@@ -518,7 +514,7 @@
               <div class="icon">
                 <i class="bi bi-send"></i>
               </div>
-              <h4><sup>₦</sup>180,000</h4>
+              <h4><sup>₦</sup>170,000</h4>
               {{-- <ul>
                 <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
                 <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
@@ -787,7 +783,7 @@
     </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-posts" class="recent-posts sections-bg">
+    {{-- <section id="recent-posts" class="recent-posts sections-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -878,7 +874,7 @@
         </div><!-- End recent posts list -->
 
       </div>
-    </section><!-- End Recent Blog Posts Section -->
+    </section><!-- End Recent Blog Posts Section --> --}}
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -918,7 +914,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              
+
             </div>
 
           </div>
